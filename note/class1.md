@@ -100,7 +100,8 @@ print(b.shape, b.ndim, np.linalg.matrix_rank(b))
 > 
 >- [ ] (4,2,7,3,2)
 >(1,3,7,3,0) 
->*{- 第二個元素中為2及3，維度不符合規格，因此會報錯 -}*
+
+{- 第二個元素中為2及3，維度不符合規格，因此會報錯 -}
 
 ###### 以下為Demo 範例
 > This note is yours, feel free to play around.  :video_game: 
