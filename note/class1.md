@@ -1,6 +1,9 @@
 # AI深度學習實戰 (07/01)
 
 ###### 上課筆記
+## Numpy
+### Indexing & Slicing
+![](./img/Numpy1.jpg)
 
 ###### 以下為Demo 範例
 > This note is yours, feel free to play around.  :video_game: 
