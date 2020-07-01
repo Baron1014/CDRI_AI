@@ -91,7 +91,7 @@ print(b.shape, b.ndim, np.linalg.matrix_rank(b))
 > 若b為[[1,2,3],[2,4,6]]經過linalg.matrix_rank則會因為`共線性`而為1
 
 - 多維度的運算需注意事項
-> ==將對應的兩個array維度對應只能相同、0、1==
+> ==將對應的兩個array維度對應只能為相同值 or 0 or 1==
 > 
 > 以下有兩個皆為五個維度的物件
 > 
