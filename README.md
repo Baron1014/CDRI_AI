@@ -4,7 +4,7 @@
 
 Examples
 ---
-- [AI深度學習實戰0701](/blob/master/note/class1.md)
+- [AI深度學習實戰0701](/s/book-example)
 - [Slide example](/s/slide-example)
 - [YAML metadata](/s/yaml-metadata)
 - [Features](/s/features)
