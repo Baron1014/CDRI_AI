@@ -28,7 +28,7 @@ GAN算法能夠將一個圖的風格，轉換至我們的Input上
 ## TensorFlow基礎應用
 ### tensorflow V1
 - `placeholder` 等待東西輸入
-```javascript=0
+```javascript=1
 //tf.placeholder(指定入資料型態, 指定輸入資料形狀, 幫節點命名)
 x = tf.placeholder(tf.float32, shape=(1, 2), name='x')
 //以圖片便是為例，當shape為None時，則是待會接受輸入圖片張數
@@ -45,7 +45,7 @@ x = tf.placeholder(tf.float32, [None, 784])
 > `inputarr`為輸入資料
 > `feed_dict`為定義X及Y
 > 需注意run(out)，`out變量`需與前面接收變量命名不同
-```javascript=2
+```javascript=1
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     inputarr = [[0,0],[0,1],[1,0],[1,1]]
@@ -54,7 +54,7 @@ with tf.Session() as sess:
         print(f'No{i}',out_)
 ```
 - `Save` 模型儲存
-```javascript=8
+```javascript=1
 saver = tf.train.Saver()
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
@@ -62,14 +62,14 @@ with tf.Session() as sess:
     print(sess.run(result))
 ```
 - `restore` 模型載入
-```javascript=13
+```javascript=1
 saver = tf.train.import_meta_graph("Saved_model/model.ckpt.meta")
 with tf.Session() as sess:
     saver.restore(sess, "Saved_model/model.ckpt")
     print(sess.run("result:0"))
 ```
 ※若是模型沒有載入，則會往前去讀去節點變量，範例如下：
-```javascript=17
+```javascript=1
 tf.reset_default_graph()
 v1 = tf.Variable(tf.constant(1.0, shape=[1]), name='v1')
 v2 = tf.Variable(tf.constant(2.0, shape=[1]), name='v2')
@@ -121,8 +121,8 @@ with tf.Session() as sess:
 
 ## 損失函數的定義
 ### 損失函數的種類很多
-- Mean Square Error(MSE)
-- Cross-Entropy
+- Mean Square Error(MSE)→Regression
+- Cross-Entropy→Classfication
 - Hinge loss
 
 ---
