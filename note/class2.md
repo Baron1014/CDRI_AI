@@ -1,7 +1,5 @@
 ---
-title: AI深度學習實戰(07/02)
-tags: Templates, Talk
-description: View the slide with "Slide Mode".
+tags: AI深度學習實戰
 ---
 
 # AI深度學習實戰(07/02)
