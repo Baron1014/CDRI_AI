@@ -1,6 +1,7 @@
-# AI深度學習實戰 (07/01)
-###### tags: `AI深度學習實戰`
 ---
+tags: AI深度學習實戰
+---
+# AI深度學習實戰 (07/01)
 
 ## Numpy
 ### Indexing & Slicing
