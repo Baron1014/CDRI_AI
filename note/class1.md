@@ -1,13 +1,14 @@
 # AI深度學習實戰 (07/01)
+###### tags: `AI深度學習實戰`
+---
 
-###### 上課筆記
 ## Numpy
 ### Indexing & Slicing
 ![](./img/Numpy1.jpg)
 
 ### Boolean index(Mask)
 - Find the elements of a that are bigger than 2：
-```javascript=0
+```javascript=1
 a = np.array([[1,2], [3, 4], [5, 6]])
 bool_idx = (a > 2)
 print(bool_idx)
@@ -20,7 +21,7 @@ print(a[bool_idx])
 [3 4 5 6]
 
 - array & as array
-```javascript=4
+```javascript=1
 arr1 = np.ones((3,3))
 arr2 = np.array(arr1)
 arr3 = np.asarray(arr1)
@@ -35,7 +36,7 @@ arr1[1] = 2
 ==array為copy，而asarray則為View的型態==
 
 ### Fancy index
-```javascript=8
+```javascript=1
 a = np.arange(10,20)
 b = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
 print(a)
@@ -56,7 +57,7 @@ print(b[:,[1,3]])
 
 ### [Broadcasting](https://jakevdp.github.io/PythonDataScienceHandbook/02.05-computation-on-arrays-broadcasting.html)
 - newaxis
-```javascript=14
+```javascript=1
 a = np.arange(3)
 b = np.arange(3)[:, np.newaxis]
 
@@ -75,7 +76,7 @@ print(a+b)
 ==np.newaxis為新增維度的功能，用途等同於reshape==
 
 - ndim & matrix_rank 
-```javascript=20
+```javascript=1
 a = np.array([1,2,3])
 print(a.shape, a.ndim, np.linalg.matrix_rank(a))
 b = np.array([[1,2,3],[4,5,6]])
@@ -104,7 +105,7 @@ print(b.shape, b.ndim, np.linalg.matrix_rank(b))
 
 ### [Stack](https://blog.csdn.net/qq_17550379/article/details/78934529)
 - 將兩個物件按照軸或列進行堆疊
-```javascript=24
+```javascript=1
 a = np.array([1, 2, 3])
 b = np.array([2, 3, 4])
 
