@@ -1,6 +1,7 @@
-# AI 深度學習實戰(07/08)
-###### tags: `AI深度學習實戰`
 ---
+tags: AI深度學習實戰
+---
+# AI 深度學習實戰(07/08)
 
 ## 上周複習
 - Optimizer為將loss function最小化
